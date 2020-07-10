@@ -48,7 +48,7 @@ public class Aggregator {
         }
 
         List<String> results = Stream.of(futures).map(CompletableFuture::join).collect(Collectors.toList());
-
+        System.out.println("delete");
         return results;
     }
 }
